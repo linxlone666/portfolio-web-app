@@ -1,0 +1,153 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.9rem 1.5rem;
+  background: #2b2b2b;
+  border-radius: 16px;
+  max-width: 960px;
+  margin: 1rem auto;
+  font-family: system-ui, sans-serif;
+}
+
+/* --- Logo --- */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.logoBox {
+  width: 36px;
+  height: 36px;
+  background: #d9d9d9;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.logoText {
+  color: #e8e8e8;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* --- Links --- */
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.link {
+  display: inline-block;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 400;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    font-weight 0.15s ease;
+}
+
+.link:hover,
+.link[aria-current="page"] {
+  background: #8a1f1f;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* --- Visit Github button: 3 stages --- */
+
+.visitBtn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  flex-shrink: 0;
+
+  /* Stage 1: default */
+  background: #7a1a1a;
+  transition:
+    background 0.15s ease,
+    transform 0.1s ease;
+  transform: translateY(0);
+}
+
+.visitBtnText {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Stage 2: hover — lighter coral + glitch double-text */
+.visitBtn:hover {
+  background: #e2685c;
+  transform: translateY(-1px);
+}
+
+.visitBtn:hover .visitBtnText {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow:
+    2px 0 #7a1a1a,
+    -2px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Stage 3: pressed / active */
+.visitBtn:active {
+  background: #f3f1ec;
+  transform: translateY(1px);
+}
+
+.visitBtn:active .visitBtnText {
+  color: #1a1a1a;
+  font-weight: 700;
+  text-shadow: none;
+}
+
+.visitBtn:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .visitBtn,
+  .link {
+    transition: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .navbar {
+    flex-wrap: wrap;
+    border-radius: 20px;
+  }
+  .links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

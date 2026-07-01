@@ -2,8 +2,25 @@
 import icon from "../assets/Icon.png";
 ---
 
+---
+import icon from "../assets/Icon.png";
+---
+
 <!doctype html>
 <html lang="en">
+<<<<<<< HEAD
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+=======
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -38,9 +55,32 @@ import icon from "../assets/Icon.png";
       <div></div>
     </nav>
   </body>
+>>>>>>> 98c5b39627e4d0229b289cfc130734f5c77565c0
 </html>
 
 <style>
+  body {
+    background-color: #535353;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 1.3em 1em;
+    gap: 1em;
+  }
+  #link ul {
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+    }
+  }
   body {
     background-color: #535353;
   }
