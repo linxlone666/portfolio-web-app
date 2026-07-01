@@ -1,0 +1,28 @@
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+.box_img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 4rem;
+}
+.box_img img {
+    width: 400px;
+    height: 450px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.me {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
