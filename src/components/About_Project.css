@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.main_container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.title {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  font-weight:lighter;
+  margin-bottom: 10px;
+  width: 50%;
+  height: 100%;
+}
+.main_container img {
+  position: relative;
+  left: 0;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.lorem {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  width: 50%;
+  height: 100%;
+}
+.in_continer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
