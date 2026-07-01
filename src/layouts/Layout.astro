@@ -1,64 +1,66 @@
+---
+import icon from "../assets/Icon.png";
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<nav>
-			<slot />
-			<section id="icon_top_edge">
-				<div>
-					<img src="/assets/Icon.png" alt="Icon">
-				</div>
-			</section>
-			<section id="link">
-				<div>
-					<ul>
-						<li><a href="">About</a></li>
-						<li><a href="">Project</a></li>
-						<li><a href="">Experience</a></li>
-						<li><a href="">Contact</a></li>
-					</ul>
-				</div>	
-			</section>
-			<section id="button_github">
-				<div>
-					<button></button>
-				</div>
-			</section>
-			<div>
-
-			</div>
-		</nav>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro Basics</title>
+  </head>
+  <body>
+    <nav>
+      <slot />
+      <section id="icon_top_edge">
+        <div>
+          <img src={icon.src} alt="icon" />
+        </div>
+      </section>
+      <section id="link">
+        <div>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Experience</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </section>
+      <section id="button_github">
+        <div>
+          <button></button>
+        </div>
+      </section>
+      <div></div>
+    </nav>
+  </body>
 </html>
 
 <style>
-	body {
-		background-color: #535353;
-	}
-	nav{
-		display: flex;
-        align-items: center;
-        padding: 1.3em 1em;
-        gap: 1em;
-	}
-	#link ul{
-        display: flex;
-        gap: 1em;
-        margin: 0;
-        padding: 0;
-        li{
-            list-style: none;
-            a{
-                text-decoration: none;
-                color: rgb(255, 255, 255);
-            }
-        }
+  body {
+    background-color: #535353;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 1.3em 1em;
+    gap: 1em;
+  }
+  #link ul {
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
     }
+  }
 </style>
